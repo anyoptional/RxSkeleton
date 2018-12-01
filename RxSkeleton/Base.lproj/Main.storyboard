@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSkeleton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hOU-2f-L7M"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iho-i0-mVk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NVE-Gc-3kD">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hym-9T-N77">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-Qb-8X2">
+                                <rect key="frame" x="116" y="28" width="142" height="54"/>
+                                <state key="normal" title="reload/重新加载"/>
+                                <connections>
+                                    <action selector="reload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4T3-0x-ecH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NVE-Gc-3kD" firstAttribute="top" secondItem="hOU-2f-L7M" secondAttribute="bottom" constant="70" id="Dbh-DW-q01"/>
+                            <constraint firstAttribute="trailing" secondItem="MEe-Qb-8X2" secondAttribute="trailing" constant="117" id="Esz-mQ-bUq"/>
+                            <constraint firstAttribute="trailing" secondItem="NVE-Gc-3kD" secondAttribute="trailing" id="Ghm-Zu-aTB"/>
+                            <constraint firstItem="NVE-Gc-3kD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mvs-KZ-iuF"/>
+                            <constraint firstItem="Iho-i0-mVk" firstAttribute="top" secondItem="NVE-Gc-3kD" secondAttribute="bottom" id="maA-rG-lZ0"/>
+                            <constraint firstItem="NVE-Gc-3kD" firstAttribute="top" secondItem="MEe-Qb-8X2" secondAttribute="bottom" constant="8" id="pF6-K9-yLy"/>
+                            <constraint firstItem="MEe-Qb-8X2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="116" id="qgy-Ht-EoN"/>
+                            <constraint firstItem="MEe-Qb-8X2" firstAttribute="top" secondItem="hOU-2f-L7M" secondAttribute="bottom" constant="8" id="s37-t0-nwc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="NVE-Gc-3kD" id="Vp0-U9-9Jq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
