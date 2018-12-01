@@ -20,7 +20,9 @@ class ViewController: UIViewController {
             collectionView.showsVerticalScrollIndicator = true
             
             collectionView.delegate = self
-            collectionView.dataSource = dataSource // NOTE: must set
+            // NOTE: dataSource must be set before showing skeleton
+            // you can set it directly or use bind(to:) method
+            collectionView.dataSource = dataSource
 
             collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
         }
@@ -66,7 +68,7 @@ class ViewController: UIViewController {
     private func collectionViewSkeletonedReloadDataSource() -> RxCollectionViewSkeletonedReloadDataSource<SectionModel<String, Int>>  {
         return RxCollectionViewSkeletonedReloadDataSource(configureCell: { (ds, cv, ip, item) in
             let cell = cv.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: ip) as! CollectionViewCell
-            cell.titleLabel.text = "Current cell for number is \(item), have fun."
+            cell.titleLabel.text = "Current number for cell is \(item), have fun."
             return cell
         }, reuseIdentifierForItemAtIndexPath: { _, _, _ in
             return "CollectionViewCell"

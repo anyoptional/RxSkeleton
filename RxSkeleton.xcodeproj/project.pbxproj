@@ -27,6 +27,7 @@
 		CB36CE7721B231F200245D5A /* emoticon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB36CE7621B231F200245D5A /* emoticon.png */; };
 		CB36CE7A21B242C300245D5A /* snapshot.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB36CE7921B242C300245D5A /* snapshot.gif */; };
 		CB36CE7C21B24AB900245D5A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB36CE7B21B24AB900245D5A /* LICENSE */; };
+		CB36CE7E21B2511600245D5A /* RxSkeleton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB36CE7D21B2511600245D5A /* RxSkeleton.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		CB36CE7621B231F200245D5A /* emoticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoticon.png; sourceTree = "<group>"; };
 		CB36CE7921B242C300245D5A /* snapshot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snapshot.gif; sourceTree = "<group>"; };
 		CB36CE7B21B24AB900245D5A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CB36CE7D21B2511600245D5A /* RxSkeleton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RxSkeleton.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				CB36CE7B21B24AB900245D5A /* LICENSE */,
+				CB36CE7D21B2511600245D5A /* RxSkeleton.podspec */,
 				CB36CE7821B2427B00245D5A /* preview */,
 				CB36CE5E21B22BC100245D5A /* Sources */,
 				CB36CE4B21B22BB700245D5A /* RxSkeleton */,
@@ -210,6 +213,7 @@
 				CB36CE5721B22BB900245D5A /* LaunchScreen.storyboard in Resources */,
 				CB36CE5421B22BB900245D5A /* Assets.xcassets in Resources */,
 				CB36CE7721B231F200245D5A /* emoticon.png in Resources */,
+				CB36CE7E21B2511600245D5A /* RxSkeleton.podspec in Resources */,
 				CB36CE5221B22BB700245D5A /* Main.storyboard in Resources */,
 				CB36CE7A21B242C300245D5A /* snapshot.gif in Resources */,
 			);
