@@ -5,7 +5,7 @@ As you can see, when using RxDataSources, we can not just use SkeletonView toget
 # Screenshot
 
 <p align="center">
-  <img width="375" height="667" src="preview/snapshot.gif"/>
+  <img width="320" height="568" src="preview/snapshot.gif"/>
 </p>
 
 # Usage
