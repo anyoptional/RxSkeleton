@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             
             collectionView.delegate = self
             // NOTE: dataSource must be set before showing skeleton
-            // you can set it directly or use bind(to:) method 
+            // you can set it directly or use bind(to:) method  
             collectionView.dataSource = dataSource
 
             collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
