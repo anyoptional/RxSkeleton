@@ -2,7 +2,7 @@
 
 As you can see, when using RxDataSources, we can not just use SkeletonView together, so I wrote this code to support for using SkeletonView with RxDataSources.
 
-# Installing 
+# Installation
 
 pod 'RxSkeleton'
 
